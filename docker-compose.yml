@@ -9,12 +9,14 @@ services:
       - 8087/tcp
       - 8088/tcp
       - 8089/tcp
+      - 9443/tcp
     ports:
       - 1935:1935
       - 8086:8086
       - 8087:8087
       - 8088:8088
       - 8089:8089
+      - 9443:9443
     env_file:
       - wowza.env
     volumes:
