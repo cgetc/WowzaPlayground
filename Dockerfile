@@ -10,4 +10,8 @@ COPY ./wowza/conf/webrtc/Application.xml /usr/local/WowzaStreamingEngine-4.7.7/c
 RUN chown -R wowza:wowza /usr/local/WowzaStreamingEngine-4.7.7/conf/webrtc && \
     chmod -R 775 /usr/local/WowzaStreamingEngine-4.7.7/conf/webrtc
 
+RUN mkdir /usr/local/WowzaStreamingEngine-4.7.7/applications/webrtc && \
+    chown -R wowza:wowza /usr/local/WowzaStreamingEngine-4.7.7/conf/webrtc && \
+    chmod -R 775 /usr/local/WowzaStreamingEngine-4.7.7/conf/webrtc
+
 ENTRYPOINT /sbin/entrypoint.sh
