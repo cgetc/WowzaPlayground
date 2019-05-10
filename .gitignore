@@ -1,3 +1,5 @@
 wowza.env
 wowza/content/*
 !wowza/content/.keep
+wowza/cert/*
+!wowza/cert/.keep
