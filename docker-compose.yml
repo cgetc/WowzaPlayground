@@ -4,6 +4,7 @@ services:
     image: wowzaplayground
     build: .
     expose:
+      - 443/tcp
       - 1935/tcp
       - 8086/tcp
       - 8087/tcp
@@ -11,6 +12,7 @@ services:
       - 8089/tcp
       - 9443/tcp
     ports:
+      - 443:443
       - 1935:1935
       - 8086:8086
       - 8087:8087
