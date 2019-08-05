@@ -1,5 +1,8 @@
 FROM wowzamedia/wowza-streaming-engine-linux:4.7.7
 
+RUN mkdir /usr/local/WowzaStreamingEngine-4.7.7/htdocs && \
+    mv /usr/local/WowzaStreamingEngine-4.7.7/examples/WebRTC/htdocs/html /usr/local/WowzaStreamingEngine-4.7.7/htdocs/webrtc
+
 COPY ./wowza/conf/Server.xml /usr/local/WowzaStreamingEngine-4.7.7/conf/
 
 COPY ./wowza/conf/VHost.xml /usr/local/WowzaStreamingEngine-4.7.7/conf/
