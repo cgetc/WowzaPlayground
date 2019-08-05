@@ -11,7 +11,7 @@ RUN chown -R wowza:wowza /usr/local/WowzaStreamingEngine-4.7.7/conf/webrtc && \
     chmod -R 775 /usr/local/WowzaStreamingEngine-4.7.7/conf/webrtc
 
 RUN mkdir /usr/local/WowzaStreamingEngine-4.7.7/applications/webrtc && \
-    chown -R wowza:wowza /usr/local/WowzaStreamingEngine-4.7.7/conf/webrtc && \
-    chmod -R 775 /usr/local/WowzaStreamingEngine-4.7.7/conf/webrtc
+    chown -R wowza:wowza /usr/local/WowzaStreamingEngine-4.7.7/applications/webrtc && \
+    chmod -R 775 /usr/local/WowzaStreamingEngine-4.7.7/applications/webrtc
 
 ENTRYPOINT /sbin/entrypoint.sh
